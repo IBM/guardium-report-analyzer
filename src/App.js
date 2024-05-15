@@ -20,14 +20,14 @@ function App() {
     })
     setChatHistory(updatedChat)
     setQuestion("")
-    let API_KEY = 'pak-DtmPISBiHODomuuauMGLOuVGaoxsb52bXHsdBdgog-A'
+    let API_KEY = ''
     let header = {
         'accept': 'application/json',
         'content-type': 'application/json',
         'Authorization': `Bearer ${API_KEY}`
     }
     payload["data"]['input'] = [question]
-    let SERVER_URL = "http://localhost:8080/https://bam-api.res.ibm.com"
+    let SERVER_URL = ""
     let response = await axios.post(`${SERVER_URL}/v2/text/generation?version=2024-04-15`, payload, {headers: header})
     if(!response.data.results[0].generated_text.includes('df')) {
       let updatedChat = chatHistory
