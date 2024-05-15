@@ -6,7 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm install`
 ### `npm start`
+### `Update the wastson API_KEY in App.js`
+### `Update the SERVER_URL in App.js`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -68,3 +71,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# Getting Started with Python Server
+
+### Steps to setup application
+
+
+1. Install the required libraries.
+
+   ```sh
+   pip3 install -r requirements.txt
+   ```
+
+2. Run the application.
+
+   ```sh
+   python app.py
+   ```
